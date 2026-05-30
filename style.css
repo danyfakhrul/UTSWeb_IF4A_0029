@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Pengaturan khusus halaman gelap (Dark Mode) */
+body.dark-mode {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+body.dark-mode .bg-light, 
+body.dark-mode .bg-white {
+    background-color: #1e1e1e !important;
+    color: #f8f9fa !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .border,
+body.dark-mode .bg-white.p-4 {
+    background-color: #242424 !important;
+    border-color: #444 !important;
+    color: #f8f9fa !important;
+}
+
+body.dark-mode .text-muted {
+    color: #bbb !important;
+}
+
+.product-item {
+    transition: transform 0.2s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
